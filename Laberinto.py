@@ -85,9 +85,8 @@ class Laberinto:
     def encontrar_caminos(self):
         pos_ini = [self.__pos_r[0], self.__pos_r[1], self.__orientation]
         pos_final1, pos_final2 = self.final()
-        camino = []
         lista_caminos = []
-        cola = [(pos_ini, camino)]
+        cola = [(pos_ini, [])]
         visitados = []
 
         while len(cola)>0:
